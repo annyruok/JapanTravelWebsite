@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wide-only {
+    display: none;
+}
+
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: #2C2C2C;
+    font-size: 4.5vh;
+}
+
+
+
+h2,
+h3,
+p,
+.article-summary a.button,
+#bottom-nav ul li a,
+.map-page a,
+#bottom {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: #7E7E7E;
+    line-height: 1;
+}
+
+p {
+    color: #7E7E7E;
+    font-size: 2.2vh;
+
+}
+
+#masthead {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.home {
+    background-image: url(../images/landingimg.jpeg);
+}
+
+.map-plan {
+    background-image: url(../images/map-header.jpeg);
+}
+
+.visit-kyushu {
+    background-image: url(../images/kyushu-header.jpg);
+
+}
+
+.kurokawa-onsen {
+    background-image: url(../images/kurokawaonsenheader.jpeg);
+}
+
+.visit-hokkaido {
+    background-image: url(../images/hokkaidoheader.jpg);
+}
+
+.visit-shiretoko {
+    background-image: url(../images/shiretokobridge.jpeg);
+}
+
+.visit-akan-mashu {
+    background-image: url(../images/akan.jpg);
+}
+
+.visit-honshu {
+    background-image: url(../images/honshuheader.jpg);
+}
+
+.about-me {
+    background-image: url(../images/aboutheader.jpg);
+}
+
+.references {
+    background-image: url(../images/referencesheader.jpg);
+}
+
+#masthead:before {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9vh;
+    height: 81vh;
+    width: 100%;
+}
+
+
+#header {
+    box-shadow: 0px 2px 5px -5px rgba(107, 106, 107, 1);
+}
+
+#header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 5vh;
+    padding: 2vh 6vw;
+}
+
+#header ul ul {
+    /*position dropdown mini navs*/
+    width: 50vw;
+    left: 25%;
+    top: 12vh;
+}
+
+
+.drop-1 > li {
+    background-color: white;
+    padding: 2vh 0;
+    text-align: center;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.drop-2 li {
+    background-color: transparent;
+    text-align: center;
+}
+
+
+#header > ul > li > a,
+#header > ul > li,
+ul.drop-1 > li > a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8vh;
+    /*CHANGE ME TO VH*/
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+ul.drop-2 > li > a {
+    color: #2C2C2C;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vh;
+    height: 3vh;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.toggle::after {
+    font-family: FontAwesome;
+    content: " \f107";
+}
+
+
+
+.drop-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 0%;
+}
+
+
+
+.drop-1 li {
+    display: none;
+}
+
+.drop-1 li a,
+.drop-1 .toggle {
+    background-color: white;
+}
+
+.drop-2 {
+    display: none;
+}
+
+.drop-2 li {
+    display: block;
+}
+
+
+
+
+input[type=checkbox]:checked ~ .drop-2 {
+    display: block;
+}
+
+
+input[type=checkbox]:checked ~ ul li {
+    display: block;
+}
+
+input#top-drop-nav[type=checkbox]:checked .drop-1 li {
+    display: block;
+    margin: auto;
+}
+
+#overlay {
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+}
+
+#overlay h1 {
+    font-size: 8vh;
+    color: white;
+    line-height: 0.8;
+    font-weight: 400;
+}
+
+#overlay h1.size-down {
+    font-size: 7vh;
+}
+
+
+
+#overlay h2 {
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 14px;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-article {
+    margin-bottom: 5vh;
+}
+
+#map #map-page {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+
+
+#map img {
+    width: 100%;
+    height: auto;
+}
+
+#map ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#map li {
+    position: absolute;
+    list-style: none;
+}
+
+
+#map a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Open Sans';
+}
+
+#hokkaido {
+    left: 53%;
+    top: 7%;
+}
+
+#hokkaido a::before {
+    content: '\f2dc';
+    font-family: 'Font Awesome\ 5 Free';
+    color: black;
+    position: absolute;
+    display: block;
+    top: 140%;
+    left: 170%;
+    font-size: 4vh;
+}
+
+
+#honshu {
+    top: 78%;
+    left: 50%;
+}
+
+#honshu a::before {
+    content: '\f6a1';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    display: block;
+    top: -280%;
+    font-size: 4vh;
+
+}
+
+
+#shikoku {
+    top: 85%;
+    left: 26%;
+}
+
+#shikoku a::before {
+    content: '\f21a';
+    font-family: 'Font Awesome\ 5 Free';
+    color: black;
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    top: -105%;
+    left: -13%;
+    font-size: 3vh;
+}
+
+
+
+
+#kyushu {
+    top: 95%;
+    left: 13%;
+}
+
+
+#kyushu a::before {
+    content: '\f6fc';
+    font-family: 'Font Awesome\ 5 Free';
+    color: black;
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    top: -200%;
+    left: -40%;
+    font-size: 3.5vh;
+}
+
+a .see-all-button ,
+.learn-more a {
+    font: 'Open Sans';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+
+}
+
+
+.see-all-button {
+    background-color: #2C2C2C;
+    border: none;
+    padding: 2vh 6vw;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    margin: 2vh 0;
+}
+
+.get-to-know-us {
+    display: flex;
+    flex-direction: column !important;
+}
+
+
+a.continue {
+    text-decoration: none;
+    color: orangered;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    line-height: 2.5;
+}
+
+a.continue::after {
+    content: ' >';
+}
+
+
+
+
+.learn-more {
+    background-color: #2C2C2C;
+    border: none;
+    padding: 1.8vh 2vw;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+
+/********ARTICLE STUFF*******/
+
+main {
+    text-align: center;
+    margin: 5vh 0 8vh 0;
+}
+
+
+.article-main,
+.getting-there-container {
+    line-height: 1.5;
+
+}
+
+.article-main h1 {
+    font-weight: 400;
+    padding-bottom: 3.5vh;
+
+}
+
+.article-main h2,
+.getting-there-container h2 {
+    text-align: left;
+    margin-bottom: 0.75vh;
+    margin: 0 8vw;
+}
+
+.article-main p {
+    padding: 0 8vw;
+    margin: 1.5vh 0;
+}
+
+.getting-there-container h1,
+.top-picks h1 {
+    margin-bottom: 3vh;
+}
+
+.top-picks-extras {
+    margin-bottom: 3vh;
+}
+
+.getting-there-container p {
+    padding: 0 8vw;
+}
+
+p > a {
+    text-decoration: underline;
+    color: #2C2C2C;
+}
+
+.article-main p:not(.intro),
+.getting-there-container h2,
+.getting-there-container p {
+    text-align: left;
+}
+
+.intro,
+.rest-of-summary-right,
+.rest-of-summary-left {
+    text-align: center;
+    margin: 0 8vw;
+}
+
+
+.top-picks {
+    margin: auto;
+    width: 95%;
+}
+
+.top-picks ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vw;
+}
+
+.top-picks h2.size-down {
+    top: 27vh;
+}
+
+.top-picks img {
+    height: 35vh;
+    width: 45vw;
+    object-fit: cover;
+}
+
+.gradient-text {
+    position: absolute;
+    width: 47vw;
+}
+
+.gradient::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 100%);
+    margin-top: -35vh;
+    margin-left: 0.3vh;
+    height: 34.5vh;
+    width: 45vw;
+}
+
+.gradient h2 {
+    position: relative;
+    top: 30vh;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+h2.see-all {
+    text-align: center !important;
+    margin: 2vh 0 !important;
+}
+
+.see-all a {
+    text-decoration: none;
+    color: #7E7E7E;
+}
+
+.see-all a:active {
+    text-decoration: underline;
+}
+
+
+h2.getting-there {
+    padding-top: 2.5vh;
+}
+
+img.portrait {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin: 3.5vh 0;
+}
+
+img.landscape {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin: 3.5vh 0;
+}
+
+.contact {
+    margin-top: 5vh !important;
+    text-align: center !important;
+}
+
+.contact a {
+    color: #000000;
+    font-weight: 600;
+}
+
+
+
+#bottom {
+    color: #2C2C2C;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 2vh;
+}
+
+
+
+#bottom ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+#bottom > ul {
+    border-top: 1px #7E7E7E solid;
+    border-bottom: 1px #7E7E7E solid;
+    margin: 0 5vw;
+    text-align: center;
+
+}
+
+#bottom > ul > li {
+    padding: 2.5vh 0;
+    text-align: center;
+    height: 25%;
+    width: 90%;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.ul-drop {
+    padding-top: 1vh;
+}
+
+#bottom .last {
+    border-bottom: none;
+}
+
+#bottom ul li a {
+    text-decoration: none;
+    color: #2C2C2C;
+}
+
+
+.ul-drop {
+    display: block;
+    margin: auto;
+}
+
+.ul-drop li {
+    display: none;
+}
+
+input#dropdown[type=checkbox]:checked ~ ul li {
+    text-transform: capitalize;
+    font-size: 2.25vh;
+}
+
+#bottom-logo {
+    text-align: center;
+    padding: 2.5vh 5vw;
+    font-weight: 700;
+}
+
+.contact {
+    text-transform: none;
+
+}

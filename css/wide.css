@@ -1,0 +1,414 @@
+.wide-view-only,
+.wide-only {
+    display: block;
+}
+
+
+#masthead::before {
+    top: 0 !important;
+}
+
+
+.home {
+    height: 100vh !important;
+}
+
+.home::before {
+    height: 100vh !important;
+}
+
+.home #overlay {
+    top: 80%;
+}
+
+.region {
+    height: 90vh !important;
+}
+
+.region::before {
+    height: 90vh !important;
+}
+
+.individual-masthead {
+    height: 50vh !important;
+}
+
+.individual-masthead::before {
+    height: 50vh !important;
+}
+
+.individual-masthead #overlay {
+    top: 35vh !important;
+}
+
+#header {
+    height: 5vh;
+    text-align: center;
+    position: relative;
+}
+
+#header > ul {
+    display: flex;
+}
+
+
+#header > ul > li.wide-only {
+    list-style: none;
+    display: block;
+}
+
+#header a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+
+#header > ul > li {
+    width: 16.6%;
+    height: 10vh;
+}
+
+#header > ul > li > a {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-top: 2.5vh;
+}
+
+
+#header ul.hover-drop {
+    list-style: none;
+    background: white;
+    position: absolute;
+    top: 9vh;
+    left: 18%;
+    width: 20%;
+    padding: 1vh 0;
+    display: none;
+}
+
+#header ul.hover-drop > li > a {
+    line-height: 4vh;
+    padding: 0 2vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+#header > ul > li:hover > a {
+    text-decoration: underline;
+}
+
+
+#header > ul > li:hover > ul.hover-drop {
+    display: block;
+}
+
+
+#header > ul > li:hover > ul.hover-drop > li a.active {
+    color: orangered;
+    font-weight: bold;
+}
+
+
+#header > ul > li:hover > ul.hover-drop > li:hover a {
+    text-decoration: underline;
+}
+
+.hover-drop a.active {
+    font-weight: 600;
+
+}
+
+p.sandwich {
+    margin: 5vh 20vw;
+}
+
+.sandwich-bottom /*om nom nom*/ {
+    display: block;
+    margin: 2.5vw 13vw 10vh 13vw;
+}
+
+
+.sandwich-bottom h2,
+.sandwich-bottom p {
+    text-align: left;
+}
+
+
+
+.center {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 8vh;
+    margin: 3.5vh 4vw;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.article-main {
+    width: 60%;
+    margin: 0 5% 0 0;
+}
+
+.individual {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.article-main p {
+    text-align: left;
+}
+
+.article-main > p {
+    padding: 0 10%;
+}
+
+.getting-there-container {
+    padding: 0%;
+}
+
+.getting-there-container h1 {
+    padding: 2.5% 0;
+}
+
+.getting-there-container h2 {
+    text-align: left;
+}
+
+img.landscape {
+    width: 90%;
+    margin: auto;
+    padding: 2.5% 0;
+}
+
+img.portrait {
+    width: 60%;
+    margin: auto;
+    padding: 2.5% 0;
+}
+
+.top-picks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.top-picks h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-picks > a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-picks-extra a {
+    color: black;
+    text-decoration: underline;
+}
+
+.top-picks a:hover {
+    text-decoration: underline;
+}
+
+.top-picks ul {
+    display: block;
+}
+
+
+.top-picks img {
+    height: 50vh;
+    width: 23vw;
+    object-fit: cover;
+    width: 98%;
+    height: 40vh;
+    padding: 2vh 0;
+}
+
+.see-all a {
+    width: 100%;
+}
+
+.gradient::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 100%);
+    margin-top: -40vh;
+    height: 38vh;
+    width: 99%;
+    content: '';
+}
+
+.gradient-text {
+    position: relative;
+    width: 100%;
+}
+
+.gradient h2 {
+    position: relative;
+    top: 25vh;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse !important;
+
+}
+
+.article-summary h2 {
+    font-weight: 600;
+}
+
+.article-summary {
+    width: 85%;
+    padding: 2.5% 0;
+    display: block;
+    margin: auto;
+}
+
+.article-summary img.portrait {
+    display: block;
+    height: 100vh;
+    width: auto;
+}
+
+.article-summary img.landscape {
+    margin: 0;
+    float: right;
+}
+
+
+.summary > .article-summary {
+    display: flex;
+    flex-direction: row;
+}
+
+.rest-of-summary-left {
+    display: block;
+    margin: auto 0;
+    width: 80vw;
+}
+
+div:not(.reverse) > .rest-of-summary-right {
+    display: block;
+    margin: auto 0 auto 10%;
+}
+
+
+
+.reverse > .rest-of-summary-right {
+    margin: auto 10% auto 0;
+     !important;
+}
+
+
+a.continue:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.see-all-stories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+
+.see-all-stories p {
+    font-size: 2vh;
+    margin-left: 18%;
+}
+
+#map li:hover a:before {
+    transform: scale(1.5);
+}
+
+#map a {
+    font-size: 3vh;
+}
+
+#hokkaido a::before {
+    top: 100%;
+    left: 150%;
+    font-size: 6vh;
+}
+
+#honshu a::before {
+    top: -350%;
+    left: 20%;
+    font-size: 6vh;
+}
+
+#shikoku a::before {
+    top: -150%;
+    left: -30%;
+    font-size: 5vh;
+}
+
+#kyushu a::before {
+    top: -250%;
+    left: -50%;
+    font-size: 5vh;
+}
+
+
+#map a:after {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0%;
+    border-bottom: 2px solid black;
+    content: '';
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#map a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid black;
+    content: '';
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#map li:hover a:after {
+    width: 100%;
+}
+
+#bottom ul {
+    flex-direction: row;
+}
+
+.hide-me {
+    display: none;
+}
+
+.contact {
+    text-transform: none;
+
+}
